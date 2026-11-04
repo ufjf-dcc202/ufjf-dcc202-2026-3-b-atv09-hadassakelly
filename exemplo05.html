@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Exemplo 05</title>
+    <style>
+        header{
+            background-color: rgb(211, 226, 240);
+        }
+        footer{
+            background-color: azure;
+        }
+        section {
+            background-color: rgb(228, 210, 252);
+        }
+        nav {
+            background-color: rgb(241, 206, 238);
+        }
+        aside {
+            background-color: rgb(205, 247, 247);
+        }
+
+        .pancake-stack{
+            display: grid;
+            grid-template-rows:  auto 1fr auto;
+        }
+
+        .pancake-stack > section {
+            overflow: auto;
+        }
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            border: 1px solid blue;
+            background-color: aliceblue;
+            padding: 0.1em;
+        }
+
+        .holy-grail{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: auto 1fr auto;
+        }
+
+        .holy-grail > header{
+            grid-column: 1/4;
+        }
+
+        .holy-grail > footer{
+            grid-column: 1/4;
+        }
+
+
+        .holy-grail > section{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        
+        <article class="holy-grail">
+            <header>
+                <h1>Exemplo 05: Holy Grail</h1>
+            </header>
+            <nav>
+                <ul class="descontructed-pancake">
+                    <li>Primeiro</li>
+                    <li>Segundo</li>
+                    <li>Terceiro</li>
+                    <li>Quarto</li>
+                    <li>Quinto</li>
+                </ul>
+
+            </nav>
+            <section>
+                <h2>Texto</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit dolor itaque exercitationem dolorum alias, quas laudantium? Sequi tenetur porro consequatur praesentium nostrum, error voluptas ab debitis magni ea perspiciatis labore.</p>
+                <p>Aspernatur rem atque consequuntur reprehenderit veniam esse consequatur dolorem sed corrupti dicta commodi totam optio, alias, vel quam magnam aliquam vero. Corrupti molestiae odio minima aliquid autem quas atque nemo!</p>
+                <p>Corrupti id quidem aliquid saepe quam sed voluptate optio odio quo sit. Eaque itaque est officia dolor nemo nostrum ipsam non atque quam aliquam, impedit modi culpa exercitationem velit tempore!</p>
+            </section>
+            <aside>
+                <ul class="descontructed-pancake">
+                    <li>Primeiro</li>
+                    <li>Segundo</li>
+                    <li>Terceiro</li>
+                    <li>Quarto</li>
+                    <li>Quinto</li>
+                </ul>
+
+            </aside>
+            <footer>
+                &COPY; 2026 - DCC202 - UFJF
+            </footer>
+        </article>
+    </main>
+    
+</body>
+</html>
