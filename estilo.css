@@ -1,0 +1,5 @@
+main > article {
+    border: 1px solid blue;
+    resize:both;
+    overflow: auto;
+}
